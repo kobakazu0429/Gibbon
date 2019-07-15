@@ -1,3 +1,4 @@
+require "bundler/setup"
 require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
-require './db/database.rb'
+require_relative "./db/database"
