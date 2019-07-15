@@ -14,6 +14,7 @@ GEM
       tzinfo (~> 1.1)
     arel (9.0.0)
     concurrent-ruby (1.1.5)
+    dotenv (2.7.4)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     minitest (5.11.3)
@@ -41,6 +42,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  dotenv
   mysql2
   rake
   sinatra
