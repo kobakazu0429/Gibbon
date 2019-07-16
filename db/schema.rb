@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_15_120217) do
+ActiveRecord::Schema.define(version: 2019_07_16_081228) do
 
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci", force: :cascade do |t|
     t.string "title", null: false
     t.string "author", null: false
     t.integer "volume", null: false
-    t.boolean "isCompleted"
+    t.boolean "isCompleted", default: false, null: false
     t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
