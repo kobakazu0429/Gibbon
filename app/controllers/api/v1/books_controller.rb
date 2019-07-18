@@ -15,7 +15,7 @@ class Api::V1::BooksController < Api::V1::BaseController
 
   put "/:id/", provides: :json do
     @book = Book.find(params["id"])
-    @book.update(book_params(JSON.parse(request.body.read)))
+    @book.update(book_params(JSON.parse(request.body.read).except(:id)))
 
     redirect '/api/v1/books/'
   end
